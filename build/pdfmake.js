@@ -12653,7 +12653,7 @@
 	     * @returns {string} Returns the deburred string.
 	     * @example
 	     *
-	     * _.deburr('d? vu');
+	     * _.deburr('déjà vu');
 	     * // => 'deja vu'
 	     */
 	    function deburr(string) {
@@ -16298,7 +16298,7 @@
 	}
 
 	//TODO: support for other languages (currently only polish is supported)
-	var diacriticsMap = { 'A': 'A', 'C': 'C', 'E': 'E', 'L': 'L', 'N': 'N', '?: 'O', 'S': 'S', 'Z': 'Z', 'Z': 'Z', 'a': 'a', 'c': 'c', 'e': 'e', 'l': 'l', 'n': 'n', '??'o', 's': 's', 'z': 'z', 'z': 'z' };
+	var diacriticsMap = { 'A': 'A', 'C': 'C', 'E': 'E', 'L': 'L', 'N': 'N', 'Ó': 'O', 'S': 'S', 'Z': 'Z', 'Z': 'Z', 'a': 'a', 'c': 'c', 'e': 'e', 'l': 'l', 'n': 'n', 'ó': 'o', 's': 's', 'z': 'z', 'z': 'z' };
 	// '  << atom.io workaround
 
 	function removeDiacritics(text) {
@@ -33665,7 +33665,7 @@
 	            lh = _this.document.currentLineHeight(true);
 	            if ((_this.height != null) && _this.ellipsis && _this.document.y + lh * 2 > _this.maxY && _this.column >= _this.columns) {
 	              if (_this.ellipsis === true) {
-	                _this.ellipsis = 't;
+	                _this.ellipsis = '…';
 	              }
 	              buffer = buffer.replace(/\s+$/, '');
 	              textWidth = _this.wordWidth(buffer + _this.ellipsis);
