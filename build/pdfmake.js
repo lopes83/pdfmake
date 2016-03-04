@@ -16298,7 +16298,7 @@
 	}
 
 	//TODO: support for other languages (currently only polish is supported)
-	var diacriticsMap = { 'A': 'A', 'C': 'C', 'E': 'E', 'L': 'L', 'N': 'N', 'Ó': 'O', 'S': 'S', 'Z': 'Z', 'Z': 'Z', 'a': 'a', 'c': 'c', 'e': 'e', 'l': 'l', 'n': 'n', 'ó': 'o', 's': 's', 'z': 'z', 'z': 'z' };
+	var diacriticsMap = {};
 	// '  << atom.io workaround
 
 	function removeDiacritics(text) {
